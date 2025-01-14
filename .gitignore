@@ -1,0 +1,3 @@
+# omitir base de datos
+
+django_api/databasesettings.py
