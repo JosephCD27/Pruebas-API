@@ -1,5 +1,6 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
+from rest_framework.documentation import include_docs_urls
 from .views import TaskViewSet
 
 # Crea una instancia del router
@@ -9,4 +10,5 @@ router.register(r'tasks', TaskViewSet)
 # Agrega las rutas
 urlpatterns = [
     path('api/v1/', include(router.urls)),
+    path('docs/', include_docs_urls(title="Task API"))
 ]
