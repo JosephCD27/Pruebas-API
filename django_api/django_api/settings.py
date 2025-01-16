@@ -125,11 +125,11 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# configuración de cors para mezclar back y fornt
+# configuración de cors para mezclar back y front (urls con autorización)
 CORS_ALLOWED_ORIGINS = [
 #     "https://example.com",
 #     "https://sub.example.com",
-#     "http://localhost:8080",
+     "http://localhost:5174",
 #     "http://127.0.0.1:9000",
 ]
 
